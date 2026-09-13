@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "172.64.52.6",
-      "server_port": 8880,
+      "server": "172.64.32.103",
+      "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -20,6 +20,85 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
+      "server": "104.18.39.218",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
+      "server": "104.18.47.113",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
+      "server": "104.18.34.14",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
+      "server": "185.207.197.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tls": {
+        "enabled": true,
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "813cd228-ebf6-0e21-481a-ba4af8f85b82",
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "odd-disk-98c5.assassincreed4048.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe",
       "server": "62.233.39.9",
       "server_port": 8443,
       "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
@@ -42,12 +121,26 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe",
+      "server": "94.198.220.183",
+      "server_port": 64674,
+      "method": "chacha20-ietf-poly1305",
+      "password": "s8LbJCgUiGXeCKVc63tHJP"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe"
       ]
     },
     {
@@ -55,7 +148,13 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
