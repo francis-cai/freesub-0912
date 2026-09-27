@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
+  server: 151.101.56.9
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇮🇷 IR 02 - xiaohe
   server: 62.60.152.1
   port: 56328
   udp: true
@@ -17,15 +28,6 @@ proxies:
     short-id: f3a9c21e8b6d4571
   servername: table.vkroom-it-service.xyz
   client-fingerprint: chrome
-- name: 🇮🇷 IR 02 - xiaohe
-  server: service.erisrtg.ir
-  port: 9098
-  udp: true
-  type: vless
-  uuid: 9730ec36-a1d8-4cae-a246-fde2678be5df
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
