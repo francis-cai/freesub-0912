@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.199.62
+  server: 8.47.69.0
   port: 443
   udp: true
-  type: vless
-  uuid: 9fa6d846-5961-8e0e-ce27-77de00000000
-  tls: true
-  servername: fancy-wind-799d.cloudneryacc.workers.dev
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
-    headers:
-      Host: fancy-wind-799d.cloudneryacc.workers.dev
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
