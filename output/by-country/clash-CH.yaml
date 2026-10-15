@@ -40,31 +40,29 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 177.3.208.65
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  server: 193.168.200.67
   port: 443
   udp: true
   type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 45.133.151.186
-  port: 25393
-  udp: true
-  type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-    short-id: bcc707a7148e4a0c
-  servername: www.samsung.com
+    public-key: ba3xYhPfXzT1HOHrbCka-pGaBIJGDouCg1MbdlRzklE
+    short-id: 5a7c3dab8d267f
+  servername: yunohost.org
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
