@@ -4,23 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.29.254
-  port: 10443
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: 34.245.155.44
+  port: 443
   udp: true
   type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 rules:
 - MATCH,PROXIES
