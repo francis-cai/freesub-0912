@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "diffoscope.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
