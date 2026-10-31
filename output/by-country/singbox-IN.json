@@ -28,7 +28,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -66,8 +66,9 @@
       "security": "auto",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
-          "Host": "in-152.67.8.205-0204"
+          "Host": "152.67.8.205"
         }
       }
     },
