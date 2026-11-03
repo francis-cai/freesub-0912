@@ -5,13 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: forshynewh.duckdns.org
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: uae.unixzone.us
   port: 22573
@@ -34,21 +36,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +44,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +52,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 rules:
 - MATCH,PROXIES
