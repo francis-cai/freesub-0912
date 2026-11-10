@@ -24,20 +24,20 @@ proxies:
   sni: fi1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 146.103.118.189
-  port: 443
+  server: 84.22.150.39
+  port: 7443
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
   tls: true
-  servername: nl2.574ck.xyz
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /@Marisa_kristi
     headers:
-      Host: nl2.574ck.xyz
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
