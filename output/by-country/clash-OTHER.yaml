@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.94.203
+  server: 188.114.98.0
   port: 443
   udp: true
   type: vless
@@ -13,14 +13,14 @@ proxies:
   tls: true
   servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.19.33.237
+  server: 188.114.98.0
   port: 443
   udp: true
   type: vless
